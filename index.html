@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <h1> Heading </h1>
+        <nav>
+            <a href="#sub1">Subheading 1 | </a> 
+            <a href="#sub2">Subheading 2 | </a>
+            <a href="#sub3">Subheading 3 | </a>
+            <a href="#sub4">Subheading 4 | </a>
+        </nav>
+         <h2 id = "sub1">Sub Heading 1 (working with Table)</h2>
+         <style>
+             table, td, tr { 
+                 border: 1px solid black;
+             }
+             table {
+                 border-collapse: collapse;
+             }
+             td {
+                 height: 50px;
+                 vertical-align: bottom;
+             }
+             tr td{
+                 padding: 15px;
+             }
+         </style>
+         <table>
+             <tr>
+                 <td>Title 1</td>
+                 <td>Title 2</td>
+                 <td>Title 3</td>
+             </tr>
+             <tr>
+                 <td>
+                     <table>
+                         <tr>
+                             <td>cell 1</td>
+                             <td>cell 2</td>
+                             <td>cell 3</td>
+                         </tr>
+                     </table>
+                 </td>
+                 <td>cell 2</td>
+                 <td rowspan ="2">cell 3</td>
+             </tr>
+             <tr>
+                 <td>cell 4</td>
+                 <td>cell 5</td>
+             </tr>
+             <tr>
+                 <td colspan="3">cell 6</td>
+             </tr>
+         </table>
+         <h2 id = "sub2">Sub Heading 2 (working with Links)</h2>
+         <ol>
+            <li>External link</li>
+            <ol type="a">
+                <li><a href="google.com">Go to google</a></li>
+                <li><a href="facebook.com">Go to facebook</a></li>
+                <li><a href="twitter.com">Go to twitter</a></li>
+            </ol>
+            <li><a href="mailto:info@karunya.edu">Mail link</a></li>
+            <li><a href="tel:+919446111709">Tel link</a></li>
+            <li><a href="/images/myw3schoolsimage.jpg" download>Download link</a></li>
+        </ol>
+         <h2 id = "sub3">Sub Heading 3 (working with Texts)</h2>
+             <h3><u>Sample code</u></h3>
+             <p>
+                 &lt;html&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title &lt;/title&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                 &lt;/html&gt;<br>
+             </p>
+             <h4><u>paragraph</u><h4>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur scelerisque leo, quis pulvinar leo
+sollicitudin non. Vestibulum sagittis neque et imperdiet mollis. Vivamus feugiat et neque at rutrum. Etiam
+dignissim consequat feugiat. In scelerisque pretium enim, ut vehicula velit auctor sed. Donec rhoncus sodales
+diam ut interdum. Donec ut ullamcorper felis, in fermentum odio. Mauris gravida consectetur tellus et
+bibendum. Nulla eu urna elit. Nam ullamcorper, nunc in tincidunt placerat, eros ex ullamcorper neque, vel
+auctor sapien sem ac diam. Sed mollis, odio ac faucibus viverra, mi risus lobortis ligula, in pretium nunc felis ut
+ipsum. Etiam tristique mi sed varius porta. Proin aliquam, magna ac tincidunt vehicula, nibh lorem finibus
+augue, id commodo ligula eros et ligula. Nunc nisl purus, pharetra viverra tristique ac, efficitur quis lectus.
+Pellentesque iaculis tellus eget magna placerat, sed porttitor leo cursus. Fusce volutpat, libero non suscipit
+facilisis, mauris urna porttitor tellus, vel mollis lectus arcu eu sapien.</p>
+                 <br>
+                 <h4><u>Phrase Tags</u></h4>
+                 <p>
+                     The following word has been <mark>marked</mark> with yellow<br>
+                     The following word uses a <strong>strong</strong> typeface.<br>
+                     My best friend's name is <i><u> <abbr title="Abhishek">Abhy</abbr></u></i>(add text abbreviation Abhishek)<br>
+                     <i>Amit is in Spain, “ I think I am wrong.”</i><br>
+                 <pre>(a+b)<sup> 2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</pre><br>
+                 <pre>H<sub>2</sub> + O<sub>2</sub> = H<sub>2</sub>O</pre><br>
+                 </p>
+                 <h2 id = "sub4">Sub Heading 4 (working with multimedia)</h2>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIklzIvp8dHGE2BgJZJZcWS6dEzUv2JJhZ_m48sn4hoCEAYbY-" >
+                 <iframe width="1350" height="759" 
+                         src="https://www.youtube.com/embed/8a_KDZtBDT0" 
+                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                             
+                 </iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15669.439531477268!2d76.744061!3d10.936164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc650b8a75e7b51f0!2sKarunya+Institute+of+Technology+and+Sciences+(Deemed+University)!5e0!3m2!1sen!2sin!4v1563431669719!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 <footer>
+                    <address>Karunya Nagar, Coimbatore, Tamil Nadu 641114</address><br>
+                     <p>&copy; 2019-2020. (URK17CS160) - Web Technology Lab Batch 3. All Rights Reserved.</p>
+                 </footer>
+    </body>
+</html>
