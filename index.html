@@ -6,157 +6,117 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Experiment 2</title>
+        <title>lab</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1> ONLINE APPLICATION FORM </h1>
-        <fieldset>
-        <h2>Examination Details</h2>
-        <label> Paper appearing for </label> 
-        <select name="Paper appearing for" class="radius">
-            <option>Select Course</option>
-            <option>B.Tech/BE</option>
-            <option>B.Arch/ B.Plan</option></select><br/><br/>
-            
-             <label> Choice of examination centre </label> 
-             <select name="Choice of examination centre" class="radius">
-                 <option>Chennai</option>
-                 <option>Coimbatore</option>
-                 <option>Madurai</option>
-                 <option>Bangalore</option></select><br/><br/>
-                 
-                 <label> Preferred language medium for question paper </label> 
-             <select name="Preferred language medium for question paper" class="radius">
-                 <option>English</option>
-                 <option>Hindi</option>
-                 <option>Gujarati</option></select><br/></fieldset><br/>
-        <fieldset>
-            <h2>Personal Details</h2>
-            <form action="" method="post" enctype="multipart/form-data">
-                <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Name of the candidate" required = "required" class="radius1" /> <br/><br/>
-                <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Father’s Name" required = "required" class="radius1"/><br/><br/>
-                <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Mother’s Name" required = "required" class="radius" /><br/><br/>
-                 Person with Disability<br/>
-                    <input type="radio" name="gender"/>Yes
-                    <input type="radio" name="gender"/>No<br/><br/>
-                <input type="text" placeholder="E-mail address" class="radius" /><br/><br/>
-                Birthday<br/>
-                <select name="day" required = "required"><option>Day</option><option>1</option>
-                    <option>2</option><option>3</option></select>
-                <select name="month" required = "required"><option>January</option><option>February</option></select>
-                <select name="year" required = "required"><option>Year</option><option>1997</option>
-                    <option>1998</option><option>1999</option></select>  <br/><br/>
-                    Gender<br/>
-                    <input type="radio" name="gender"/>Male
-                    <input type="radio" name="gender"/>Female<br/></fieldset><br/>
-                    <fieldset>
-                    <h2> Academic details </h2>
-                    <label> Year of passing class 10th or equivalent </label>
-                    <select name="Year of passing class 10th or equivalent" required = "required">
-    <option value="2018">2018</option>
-    <option value="2017">2017</option>
-    <option value="2016">2016</option>
-    <option value="2015">2015</option>
-    <option value="2014">2014</option>
-    <option value="2013">2013</option>
-    <option value="2012">2012</option>
-    <option value="2011">2011</option>
-    <option value="2010">2010</option>
-    <option value="2009">2009</option>
-    <option value="2008">2008</option>
-    <option value="2007">2007</option>
-    <option value="2006">2006</option>
-    <option value="2005">2005</option>
-    <option value="2004">2004</option>
-    <option value="2003">2003</option>
-    <option value="2002">2002</option>
-    <option value="2001">2001</option>
-    <option value="2000">2000</option>
-    <option value="1999">1999</option>
-    <option value="1998">1998</option>
-    <option value="1997">1997</option>
-    <option value="1996">1996</option>
-    <option value="1995">1995</option>
-    <option value="1994">1994</option>
-    <option value="1993">1993</option>
-    <option value="1992">1992</option>
-    <option value="1991">1991</option>
-    <option value="1990">1990</option>
-</select><br/><br/>
-                    <label> School Board of class 12th/qualifying examination </label> 
-                    <select name="School Board of class 12th/qualifying examination" required = "required" class="radius">
-                        <option>CBSE</option>
-                        <option>State Board</option></select><br/><br/>
-                        Name of the qualifying exam passed/appearing<br/>
-                        <input type="text" placeholder="Name of the qualifying exam passed/appearing" class="radius1" /> <br/><br/>
-                        Place of class 12th/qualifying exam schooling <br/>
-                        <input type="text" placeholder="Place of class 12th/qualifying exam schooling" class="radius1"/><br/><br/>
-                        
-                         <label> Year of passing or appearing class 12th/Qualifying exam </label>
-                    <select name="Year of passing or appearing class 12th/Qualifying exam" required = "required">
-    <option value="2018">2018</option>
-    <option value="2017">2017</option>
-    <option value="2016">2016</option>
-    <option value="2015">2015</option>
-    <option value="2014">2014</option>
-    <option value="2013">2013</option>
-    <option value="2012">2012</option>
-    <option value="2011">2011</option>
-    <option value="2010">2010</option>
-    <option value="2009">2009</option>
-    <option value="2008">2008</option>
-    <option value="2007">2007</option>
-    <option value="2006">2006</option>
-    <option value="2005">2005</option>
-    <option value="2004">2004</option>
-    <option value="2003">2003</option>
-    <option value="2002">2002</option>
-    <option value="2001">2001</option>
-    <option value="2000">2000</option>
-    <option value="1999">1999</option>
-    <option value="1998">1998</option>
-    <option value="1997">1997</option>
-    <option value="1996">1996</option>
-    <option value="1995">1995</option>
-    <option value="1994">1994</option>
-    <option value="1993">1993</option>
-    <option value="1992">1992</option>
-    <option value="1991">1991</option>
-    <option value="1990">1990</option>
-</select><br/><br/>
-                Percentage of marks in class 12th/Qualifying exam<br/>
-                        <input type="number" placeholder="Percentage of marks in class 12th/Qualifying exam" required = "required" class="radius1" /> <br/><br/>
-                Name of the college/school from where passed/appearing<br/>
-                        <input type="text" placeholder="Name of the college/school from where passed/appearing" required = "required" class="radius1" /> <br/><br/>
-                Address of the school/college from where passed or appearing <br/>
-                        <input type="text" placeholder="Address of the school/college from where passed or appearing" required = "required" class="radius1"/><br/></fieldset><br/>
-                        
-                        <fieldset>
-                        <h2> Contact Details </h2>
-                        Email Id <br/>
-                        <input type="text" name="Email_Id" maxlength="100" required = "required" /><br/><br/>
-                        Mobile Number<br/>
-                        <input type="tel" name="Mobile_Number" maxlength="13" required = "required" />(10 digit number)<br/><br/>
-                        Landline Number<br/>
-                        <input type="tel" name="Landline_Number" maxlength="13" required = "required" /> <br/></fieldset><br/>
-                        <fieldset>
-                        <h2> Password </h2>
-                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password (must have 8 to 13 characters. It should have at least one alphabet andat least one numeric value." name="password" required = "required" /><br/></fieldset><br/>
-                        <fieldset>
-                        <h2> Upload </h2>
-                        Photograph<br/>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="2097152" /> 
-                            <input type="file" name="Photograph" required = "required" accept="image/png, image/jpeg" /><br/><br/>
-                        Signature<br/>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="2097152" /> 
-                            <input type="file" name="Signature" required = "required" accept="image/png, image/jpeg" /><br/></fieldset><br/>
-
- 
-<p>you agree to our
-<a href="#" class="need">Terms & Conditions</a></p>
-<button class="title" name="signup">Submit</button>
-</form>    
+         <h1> Heading </h1>
+        <nav>
+            <a href="#sub1">Subheading 1 | </a> 
+            <a href="#sub2">Subheading 2 | </a>
+            <a href="#sub3">Subheading 3 | </a>
+            <a href="#sub4">Subheading 4 | </a>
+        </nav>
+         <h2 id = "sub1">Sub Heading 1 (working with Table)</h2>
+         <style>
+             table, td, tr { 
+                 border: 1px solid black;
+             }
+             table {
+                 border-collapse: collapse;
+             }
+             td {
+                 height: 50px;
+                 vertical-align: bottom;
+             }
+             tr td{
+                 padding: 15px;
+             }
+         </style>
+         <table>
+             <tr>
+                 <td>Title 1</td>
+                 <td>Title 2</td>
+                 <td>Title 3</td>
+             </tr>
+             <tr>
+                 <td>
+                     <table>
+                         <tr>
+                             <td>cell 1</td>
+                             <td>cell 2</td>
+                             <td>cell 3</td>
+                         </tr>
+                     </table>
+                 </td>
+                 <td>cell 2</td>
+                 <td rowspan ="2">cell 3</td>
+             </tr>
+             <tr>
+                 <td>cell 4</td>
+                 <td>cell 5</td>
+             </tr>
+             <tr>
+                 <td colspan="3">cell 6</td>
+             </tr>
+         </table>
+         <h2 id = "sub2">Sub Heading 2 (working with Links)</h2>
+         <ol>
+            <li>External link</li>
+            <ol type="a">
+                <li><a href="google.com">Go to google</a></li>
+                <li><a href="facebook.com">Go to facebook</a></li>
+                <li><a href="twitter.com">Go to twitter</a></li>
+            </ol>
+            <li><a href="mailto:info@karunya.edu">Mail link</a></li>
+            <li><a href="tel:+919446111709">Tel link</a></li>
+            <li><a href="/images/myw3schoolsimage.jpg" download>Download link</a></li>
+        </ol>
+         <h2 id = "sub3">Sub Heading 3 (working with Texts)</h2>
+             <h3><u>Sample code</u></h3>
+             <p>
+                 &lt;html&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title &lt;/title&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                 &lt;/html&gt;<br>
+             </p>
+             <h4><u>paragraph</u><h4>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur scelerisque leo, quis pulvinar leo
+sollicitudin non. Vestibulum sagittis neque et imperdiet mollis. Vivamus feugiat et neque at rutrum. Etiam
+dignissim consequat feugiat. In scelerisque pretium enim, ut vehicula velit auctor sed. Donec rhoncus sodales
+diam ut interdum. Donec ut ullamcorper felis, in fermentum odio. Mauris gravida consectetur tellus et
+bibendum. Nulla eu urna elit. Nam ullamcorper, nunc in tincidunt placerat, eros ex ullamcorper neque, vel
+auctor sapien sem ac diam. Sed mollis, odio ac faucibus viverra, mi risus lobortis ligula, in pretium nunc felis ut
+ipsum. Etiam tristique mi sed varius porta. Proin aliquam, magna ac tincidunt vehicula, nibh lorem finibus
+augue, id commodo ligula eros et ligula. Nunc nisl purus, pharetra viverra tristique ac, efficitur quis lectus.
+Pellentesque iaculis tellus eget magna placerat, sed porttitor leo cursus. Fusce volutpat, libero non suscipit
+facilisis, mauris urna porttitor tellus, vel mollis lectus arcu eu sapien.</p>
+                 <br>
+                 <h4><u>Phrase Tags</u></h4>
+                 <p>
+                     The following word has been <mark>marked</mark> with yellow<br>
+                     The following word uses a <strong>strong</strong> typeface.<br>
+                     My best friend's name is <i><u> <abbr title="Abhishek">Abhy</abbr></u></i>(add text abbreviation Abhishek)<br>
+                     <i>Amit is in Spain, “ I think I am wrong.”</i><br>
+                 <pre>(a+b)<sup> 2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</pre><br>
+                 <pre>H<sub>2</sub> + O<sub>2</sub> = H<sub>2</sub>O</pre><br>
+                 </p>
+                 <h2 id = "sub4">Sub Heading 4 (working with multimedia)</h2>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIklzIvp8dHGE2BgJZJZcWS6dEzUv2JJhZ_m48sn4hoCEAYbY-" >
+                 <iframe width="1350" height="759" 
+                         src="https://www.youtube.com/embed/8a_KDZtBDT0" 
+                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                             
+                 </iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15669.439531477268!2d76.744061!3d10.936164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc650b8a75e7b51f0!2sKarunya+Institute+of+Technology+and+Sciences+(Deemed+University)!5e0!3m2!1sen!2sin!4v1563431669719!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 <footer>
+                    <address>Karunya Nagar, Coimbatore, Tamil Nadu 641114</address><br>
+                     <p>&copy; 2019-2020. (URK17CS160) - Web Technology Lab Batch 3. All Rights Reserved.</p>
+                 </footer>
     </body>
 </html>
