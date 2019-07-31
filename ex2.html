@@ -4,13 +4,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="en">
     <head>
         <title>Experiment 2</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <form action="GET" method="post">
         <h1> ONLINE APPLICATION FORM </h1>
         <fieldset>
         <h2>Examination Details</h2>
@@ -31,10 +32,10 @@ and open the template in the editor.
              <select name="Preferred language medium for question paper" class="radius">
                  <option>English</option>
                  <option>Hindi</option>
-                 <option>Gujarati</option></select><br/></fieldset><br/>
+                 <option>Gujarati</option></select><br/>
+            </fieldset><br/>
         <fieldset>
             <h2>Personal Details</h2>
-            <form action="" method="post">
                 <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Name of the candidate" required = "required" class="radius1" /> <br/><br/>
                 <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Father’s Name" required = "required" class="radius1"/><br/><br/>
                 <input type="text" pattern="[A-Za-z]*" title="accept only characters" placeholder="Mother’s Name" required = "required" class="radius" /><br/><br/>
@@ -50,7 +51,8 @@ and open the template in the editor.
                     <option>1998</option><option>1999</option></select>  <br/><br/>
                     Gender<br/>
                     <input type="radio" name="gender"/>Male
-                    <input type="radio" name="gender"/>Female<br/></fieldset><br/>
+                    <input type="radio" name="gender"/>Female<br/>
+            </fieldset><br/>
                     <fieldset>
                     <h2> Academic details </h2>
                     <label> Year of passing class 10th or equivalent </label>
