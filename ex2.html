@@ -16,24 +16,28 @@ and open the template in the editor.
         <fieldset>
         <h2>Examination Details</h2>
         <label> Paper appearing for </label> 
-        <select name="Paper appearing for" class="radius">
-            <option>Select Course</option>
-            <option>B.Tech/BE</option>
-            <option>B.Arch/ B.Plan</option>
-            </select><br/><br/>
-            
-             <label> Choice of examination centre </label> 
-             <select name="Choice of examination centre" class="radius" >
-                 <option>Chennai</option>
-                 <option>Coimbatore</option>
-                 <option>Madurai</option>
-                 <option>Bangalore</option></select><br/><br/>
-                 
-                 <label> Preferred language medium for question paper </label> 
-             <select name="Preferred language medium for question paper" class="radius">
-                 <option>English</option>
-                 <option>Hindi</option>
-                 <option>Gujarati</option></select><br/>
+        <input type="radio" name="paper" required="required" > 
+            <label>B.tech/B.E</label><br>
+            <input type="radio" name="paper" required="required"> 
+            <label> B.Arch/B.Plan</label><br>
+            <br>
+            Examination centre: &nbsp;
+             <select>
+                 <option label="Coimbatore" >
+                <option label="Kochi" >
+                <option label="Chennai" >
+                <option label="Bangalore" >
+                
+             </select>
+            <br>
+            <br>
+            Language Medium for question paper: <br>
+            <input type="radio" name="language" value="english" required="required">
+            <label>English</label><br>
+            <input type="radio" name="language" value="hindi" required="required"> 
+            <label>Hindi</label><br>
+            <input type="radio" name="language" value="gujarati" required="required">
+            <label>Gujarati</label><br>
             </fieldset><br/>
         <fieldset>
             <h2>Personal Details</h2>
@@ -43,24 +47,9 @@ and open the template in the editor.
                  Person with Disability<br/>
                     <input type="radio" name="gender"/>Yes
                     <input type="radio" name="gender"/>No<br/><br/>
-                <input type="text" placeholder="E-mail address" class="radius" required = "required"/><br/><br/>
+                <input type="email" placeholder="E-mail address" class="radius" required = "required"/><br/><br/>
                 Birthday<br/>
-                <select name="day" >
-                    <option>Day</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-            </select>
-                <select name="month">
-                    <option>month</option>
-                    <option>January</option>
-                    <option>February</option>
-            </select>
-                <select name="year">
-                    <option>Year</option>
-                    <option>1997</option>
-                    <option>1998</option>
-                    <option>1999</option>
+                <input type="calendar" name="dob" required="required" ><br><br>
             </select>  <br/><br/>
                     Gender<br/>
                     <input type="radio" name="gender"/>Male
@@ -152,26 +141,23 @@ and open the template in the editor.
                         <fieldset>
                         <h2> Contact Details </h2>
                         Email Id <br/>
-                        <input type="text" name="Email_Id" maxlength="100" required = "required" /><br/><br/>
+                        <input type="email" name="Email_Id"  required = "required" /><br/><br/>
                         Mobile Number<br/>
-                        <input type="tel" name="Mobile_Number" maxlength="13" required = "required" />(10 digit number)<br/><br/>
+                        <input type="tel" name="Mobile_Number" maxlength="13" pattern="[0-9]{10}" required = "required" />(10 digit number)<br/><br/>
                         Landline Number<br/>
-                        <input type="tel" name="Landline_Number" maxlength="13" required = "required" /> <br/></fieldset><br/>
+                        <input type="tel" name="Landline_Number" maxlength="13" pattern="[0-9]{10}" required = "required" /> <br/></fieldset><br/>
                         <fieldset>
                         <h2> Password </h2>
-                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password (must have 8 to 13 characters. It should have at least one alphabet andat least one numeric value." name="password" required = "required" /><br/></fieldset><br/>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  name="password" required = "required" /><br/></fieldset><br/>
                         <fieldset>
                         <h2> Upload </h2>
                         Photograph<br/>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="2097152" /> 
-                            <input type="file" name="Photograph" required = "required" accept="image/png, image/jpeg" /><br/><br/>
+                            <input type="file" name="imgdocument" accept=".jpg" required="required"><br><br>
                         Signature<br/>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="2097152" /> 
-                            <input type="file" name="Signature" required = "required" accept="image/png, image/jpeg" /><br/></fieldset><br/>
+                           <input type="file" name="sigimg" accept=".jpg" required="required">
 
  
-<p>you agree to our
-<a href="#" class="need">Terms & Conditions</a></p>
+<input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
 <button class="title" name="signup">Submit</button>
 </form>    
     </body>
