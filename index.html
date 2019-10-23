@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+
+    <head>
+        <title>Experiment 5</title>
+    </head>
+
+    <body>
+
+        <form>
+            <fieldset>
+                <legend>Word Count</legend>
+                <input type="text" id="inputText" placeholder="enter text">
+                <br> <br>
+                <input type="button" value="OK" onclick="counter()">
+
+                <p>
+                    String : <span id="string"></span> <br>
+                    Length : <span id="length"></span> <br>
+                    Words : <span id='words'></span> <br>
+                    Small : <span id="small"></span> <br>
+                    Large : <span id="large"></span> <br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Grade Calculator</legend>
+                <input type="text" id="mark" placeholder="enter mark">
+                <br> <br>
+                <input type="button" value="Get grade" onclick="calculate()"> <br>
+                <p>
+                    Grade : <span id="grade"></span>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Pattern Design</legend>
+                <input type="text" id="row" placeholder="enter row"> <br><br>
+                <input type="text" id="col" placeholder="enter column"> <br><br>
+                <input type="button" value="Generate" onclick="pgenerate()">
+                <p id="pattern">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>The Weight-inator</legend>
+                Convert <input type="text" id="data" />
+                <select id="from">
+                    <option>Pounds</option>
+                    <option>Kilograms</option>
+                </select>
+                to
+                <select id="to">
+                    <option>Kilograms</option>
+                    <option>Pounds</option>
+                </select>
+                <input type="button" value="generate" onclick="convert()"> <br> <br>
+                <span id="answer"></span>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Pizza Order Form</legend>
+                No of Small pizza <input type="text" id="s"><br>
+                No of Medium pizza <input type="text" id="m"><br>
+                No of Large pizza <input type="text" id="l"><br>
+                Tip:
+                <label><input type="radio" value="10" name="tip" id="r1" /> 10%</label>
+                <label><input type="radio" value="15" name="tip" id="r2" checked="checked" /> 15% </label>
+                <label><input type="radio" value="20" name="tip" id="r3" /> 20%</label> <br>
+                <input type="button" value="calculate" onclick="generateBill()"> <br>
+                <p>
+                    Cost of order: <span id="bill"></span>
+                </p>
+            </fieldset>
+        </form>
+
+        <script>
+            function counter() {
+
+                var text = document.getElementById('inputText').value;
+                document.getElementById('string').innerHTML = text;
+                var length = text.length;
+                document.getElementById('length').innerHTML = length;
+                var words = text.split(" ");
+                document.getElementById('words').innerHTML = words.length;
+
+                var large = words[0];
+                var small = words[0];
+
+                for (let i = 0; i < words.length; i++) {
+                    if (words[i].length > large.length) {
+                        large = words[i];
+                    }
+
+                    if (words[i].length < small.length) {
+                        small = words[i];
+                    }
+                }
+
+                document.getElementById('large').innerHTML = large;
+                document.getElementById('small').innerHTML = small;
+            }
+
+            function calculate() {
+                var mark = document.getElementById('mark').value;
+
+                if (mark >= 95) {
+                    document.getElementById('grade').innerHTML = "o";
+                } else if (mark >= 90) {
+                    document.getElementById('grade').innerHTML = "S";
+                } else if (mark >= 80) {
+                    document.getElementById('grade').innerHTML = "A";
+                } else if (mark >= 70) {
+                    document.getElementById('grade').innerHTML = "B";
+                } else if (mark >= 60) {
+                    document.getElementById('grade').innerHTML = "C";
+                } else if (mark >= 50) {
+                    document.getElementById('grade').innerHTML = "P";
+                } else if (mark < 50) {
+                    document.getElementById('grade').innerHTML = "R";
+                }
+            }
+
+            function pgenerate() {
+
+                var row = document.getElementById('row').value;
+                var col = document.getElementById('col').value;
+                for (let i = 0; i < row; i++) {
+                    for (let j = 0; j < col; j++) {
+                        document.getElementById('pattern').innerHTML += '<img src="data:image/jpeg;base64,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" alt="*" width="100px" height="100px">';
+                    }
+                    document.getElementById('pattern').innerHTML += '<br>';
+                }
+            }
+
+            function convert() {
+
+                var data = document.getElementById('data').value;
+                var fromindex = document.getElementById("from").selectedIndex;
+                var toindex = document.getElementById("to").selectedIndex;
+                // var value = document.getElementById("from")[index].value; // return value
+                var result = 0;
+                if (fromindex == 0 && toindex == 0) {
+                    result = data * 0.45359237;
+                } else if (fromindex == 1 && toindex == 1) {
+                    result = data * 2.20462262;
+                } else {
+                    result = data;
+                }
+                document.getElementById('answer').innerHTML = result;
+            }
+
+            function generateBill() {
+
+                var small = document.getElementById('s').value;
+                var medium = document.getElementById('m').value;
+                var large = document.getElementById('l').value;
+
+                var tip = document.querySelector('input[name="tip"]:checked').value;
+
+                var pizacost = parseInt(small * 100 + medium * 200 + large * 400);
+                var taxcost = parseInt((9 * pizacost) / 100);
+                var newcost = pizacost + taxcost;
+                var tipamount = parseInt((tip * newcost) / 100);
+                var finalcost = newcost + tipamount;
+                document.getElementById('bill').innerHTML = finalcost;
+
+            }
+        </script>
+    </body>
+
+</html>
